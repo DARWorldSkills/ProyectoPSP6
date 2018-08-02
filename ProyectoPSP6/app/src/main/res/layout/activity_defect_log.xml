@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllers.DefectLog">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/fecha"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnfecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:text="@string/type"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/spinertype"
+            android:layout_width="263dp"
+            android:layout_gravity="center"
+            android:layout_height="39dp">
+
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:text="@string/fixtime"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="italic" />
+
+
+        <EditText
+            android:id="@+id/cronometro"
+            android:layout_width="126dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/empezar"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/parar"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/reiniciar"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:text="@string/phaseinjected"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/spinnerPhaseIn"
+            android:layout_width="263dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center">
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+        <TextView
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:text="@string/phaseremoved"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/spinertphaseRemo"
+            android:layout_width="263dp"
+            android:layout_height="39dp"
+            android:layout_gravity="center">
+
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+        <TextView
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/comments"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/EtxtCommentsDe"
+            android:layout_width="226dp"
+            android:layout_height="36dp" />
+
+
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+</android.support.constraint.ConstraintLayout>
