@@ -30,7 +30,7 @@
             android:textStyle="italic" />
 
         <EditText
-            android:id="@+id/fecha"
+            android:id="@+id/txtFecha"
             android:layout_width="187dp"
             android:layout_height="wrap_content" />
 
@@ -102,23 +102,23 @@
 
 
         <EditText
-            android:id="@+id/cronometro"
+            android:id="@+id/txtCronome"
             android:layout_width="126dp"
             android:layout_height="match_parent" />
 
         <Button
-            android:id="@+id/empezar"
+            android:id="@+id/btnEmpezar"
             android:layout_width="48dp"
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/parar"
+            android:id="@+id/btnParar"
             android:layout_width="48dp"
             android:layout_height="wrap_content" />
 
 
         <Button
-            android:id="@+id/reiniciar"
+            android:id="@+id/btnReiniciar"
             android:layout_width="48dp"
             android:layout_height="wrap_content" />
 
@@ -215,7 +215,7 @@
             android:textStyle="italic" />
 
         <EditText
-            android:id="@+id/EtxtCommentsDe"
+            android:id="@+id/txtComentarios"
             android:layout_width="226dp"
             android:layout_height="36dp" />
 

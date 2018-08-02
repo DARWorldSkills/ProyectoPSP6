@@ -93,7 +93,7 @@ public class Timer_log extends AppCompatActivity implements View.OnClickListener
             horaStop.setError("Falta ingresar campo");
 
         }
-       
+
 
     }
 
