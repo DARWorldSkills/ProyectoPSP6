@@ -22,8 +22,15 @@ import java.util.List;
 public class Timer_log extends AppCompatActivity implements View.OnClickListener {
 
     Spinner spinnerPhase;
-    EditText horaStart, interrupcion, horaStop, delta, Etxtcoments;
+    EditText horaStart;
+    EditText txtinterrupcion;
+    EditText horaStop;
+    EditText delta;
+    EditText Etxtcoments;
     Button btnrun, btnhoraFin;
+    int interrupcion = 0;
+
+     int delta1= 0;
 
     Date dateStart = new Date();
     Date dateStop = new Date();
@@ -86,6 +93,7 @@ public class Timer_log extends AppCompatActivity implements View.OnClickListener
             horaStop.setError("Falta ingresar campo");
 
         }
+       
 
     }
 
@@ -111,7 +119,7 @@ public class Timer_log extends AppCompatActivity implements View.OnClickListener
 
         horaStart = findViewById(R.id.horastar);
         horaStop = findViewById(R.id.horastop);
-        interrupcion = findViewById(R.id.interrupcion);
+        txtinterrupcion = findViewById(R.id.interrupcion);
         delta = findViewById(R.id.delta);
         Etxtcoments = findViewById(R.id.EtxtComments);
 
@@ -128,16 +136,36 @@ public class Timer_log extends AppCompatActivity implements View.OnClickListener
             case R.id.btnRun:
 
                 obtenerHora();
-
-
+                btnhoraFin.setEnabled(true);
                 break;
 
             case R.id.btnhorafin:
 
+                deltaCalculo();
+                finHora();
 
 
                 break;
         }
+
+    }
+
+    private void deltaCalculo() {
+
+        double diferencia = dateStop.getTime() - dateStart.getTime();
+        delta1 = (int) ((diferencia / 60000) - interrupcion);
+        delta.setText(Integer.toString(delta1));
+
+
+    }
+
+    private void finHora() {
+
+        dateStop = new Date();
+        SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        String dateF = format.format(dateStop);
+        horaStop.setText(dateF);
+
 
     }
 
