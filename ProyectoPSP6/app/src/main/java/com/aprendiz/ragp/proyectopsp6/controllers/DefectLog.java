@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.aprendiz.ragp.proyectopsp6.R;
+import com.aprendiz.ragp.proyectopsp6.models.CDefectLog;
 
 public class DefectLog extends AppCompatActivity {
 
@@ -41,6 +42,12 @@ public class DefectLog extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+    }
+
+
+    public void inputData(){
+        CDefectLog cDefectLog = new CDefectLog();
+
     }
 
 }

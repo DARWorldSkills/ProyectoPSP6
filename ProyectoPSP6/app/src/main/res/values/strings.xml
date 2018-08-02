@@ -32,6 +32,7 @@
     <string name="fixtime">Fix Time</string>
     <string name="phaseinjected">Phase Injected</string>
     <string name="phaseremoved">Phase Removed</string>
+    <string name="ingreseelnombre">Ingrese el nombre del proyecto</string>
 
 
 </resources>
