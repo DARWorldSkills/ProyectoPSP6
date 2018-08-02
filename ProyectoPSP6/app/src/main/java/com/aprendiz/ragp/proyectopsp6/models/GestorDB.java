@@ -6,12 +6,15 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class GestorDB extends SQLiteOpenHelper {
     public GestorDB(Context context) {
-        super(context, name, factory, version);
+        super(context, Constants.DATABASE_NAME, null, Constants.DATABASE_VERSION);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
+        db.execSQL(Constants.TableProject);
+        db.execSQL(Constants.TableTimeLog);
+        db.execSQL(Constants.TableDefectLog);
+        db.execSQL(Constants.TablePPS);
     }
 
     @Override
