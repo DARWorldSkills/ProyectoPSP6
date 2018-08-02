@@ -19,6 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".controllers.Menu_proyects" />
+        <activity
+            android:name=".controllers.Timer_log"
+            android:label="@string/title_activity_timer_log" />
+        <activity
+            android:name=".controllers.DefectLog"
+            android:label="@string/title_activity_defect_log"></activity>
     </application>
 
 </manifest>

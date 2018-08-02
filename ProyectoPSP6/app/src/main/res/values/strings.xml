@@ -1,4 +1,37 @@
 <resources>
     <string name="app_name">ProyectoPSP6</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_timer_log">Timer_log</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_defect_log">DefectLog</string>
+
+
+    <string name="timer">TimeLog</string>
+    <string name="defect">DefectLog</string>
+    <string name="pps">ProjectPlanSummary</string>
+
+    <string name="phase">Phase</string>
+    <string name="start">Start</string>
+    <string name="interrupcion">Interrupcion</string>
+    <string name="stop">Stop</string>
+    <string name="delta">Delta</string>
+    <string name="comments">Comments</string>
+
+
+
+
+    <string name="limpiar">Lipiar</string>
+    <string name="registrar">Registrar</string>+
+    <string name="Lista">Lista</string>
+
+
+    <string name="date">Date</string>
+    <string name="type">Type</string>
+    <string name="fixtime">Fix Time</string>
+    <string name="phaseinjected">Phase Injected</string>
+    <string name="phaseremoved">Phase Removed</string>
+
+
 </resources>
